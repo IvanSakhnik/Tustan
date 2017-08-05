@@ -107,6 +107,7 @@ body{
     top: 13px;
     right: 5%;
     display: none;
+    z-index: 50;
 }
 
 .page-header__content{
