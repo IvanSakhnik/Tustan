@@ -1,0 +1,344 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.page-wrapper{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.active{
+    color: rgb(199,85,88) !important;
+}
+
+/*****  HEADER  **************************************************/
+
+.page-header{
+    height: 230px;
+    width: 100%;
+    background: rgb(253,251,246);
+}
+
+#navigation{
+    height: 50px;
+    width: 1160px;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu{
+    width: 65%;
+    margin-right: 10%;
+}
+
+.menu li{
+    display: inline-block;
+    height: 100%;
+    padding: 10px 0;
+    margin-right: 2%;
+    cursor: pointer;
+    padding-top: 2%;
+}
+
+.menu li:hover{
+    color: #a8353a;
+}
+
+.nav__buttons{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button{
+    width: 140px;
+    border: 1px solid #a8353a;
+    border-radius: 4px;
+    height: 65%;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    transition: all 1s;
+}
+
+.button-white{
+    color: #a8353a;
+    background-color: rgb(253,251,246);
+}
+
+.button-white:hover{
+    color: white;
+    background-color: #a8353a;
+}
+
+.button-red{
+    color: white;
+    background-color: #a8353a;
+}
+
+.button-red:hover{
+    color: #a8353a;
+    background: rgb(253,251,246);
+}
+
+.languages{
+    width: 25px;
+    height: 80%;
+}
+
+.ukr, .eng{
+    text-decoration: none;
+    vertical-align: middle;
+    color: black;
+}
+
+.humburger{
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    background: url("../images/Hamburger_icon.png") 0 0 no-repeat;
+    position: absolute;
+    top: 13px;
+    right: 5%;
+    display: none;
+}
+
+.page-header__content{
+    background: url("../images/header_back.jpg") center 0 no-repeat;
+    height: 180px;
+}
+
+.page-header__content__title{
+    padding: 2% 0 1% 15%;
+    font-family: 'CyrillicOld';
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #a8353a;
+    margin-left: -2%;
+}
+
+.logo{
+    padding-left: 15%;
+    width: 100%;
+}
+
+/*****************************************************************/
+/*****  MAIN  ****************************************************/
+
+main{
+    background: rgb(246,237,208);
+}
+
+.page-main__header{
+    width: 1160px;
+    height: 140px;
+    margin:  0 auto;
+    padding-top: 20px;
+    position: relative;
+}
+
+.icon{
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    top: 75px;
+    cursor: pointer;
+}
+
+.icon1{
+    right: 40px;
+    background: url("../images/spritesheet.png") -20px -210px no-repeat;
+}
+
+.icon2{
+    right: 0;
+    background: url("../images/spritesheet.png") -20px -150px no-repeat;
+}
+
+.back-botton{
+    text-decoration: none;
+    color: #a8353a;
+}
+
+.back-botton:before{ content: "< "; }
+
+.back-botton:hover{ color: rgb(199,85,88); cursor: pointer}
+
+.page-main__header h1{
+    border-left: 8px solid #a8353a;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 1.875em;
+    font-weight: 500;
+    height: 30px;
+    margin-top: 30px;
+}
+
+.main__content{
+    width: 1160px;
+    height: auto;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+/*****  ASIDE  ***************************************************/
+
+aside{
+    width: 270px;
+    height: 900px;
+}
+
+.aside-form{
+    display: flex;
+    flex-direction: column;;
+}
+
+.date, .theme, .location{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+}
+
+.date h2, .theme h2, .location h2{
+    color: rgb(110,110,110);
+    font-size: 1.125em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.date, .location{ height: 185px; }
+
+.theme{ height: 310px; }
+
+.button-form{
+    border: 1px solid #a8353a;
+    border-radius: 4px;
+    height: 45px;
+    width: 250px;
+    padding: 6px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 1s;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 1.125em;
+}
+
+.open_aside{
+    color: white;
+    background: #a8353a;
+    position: absolute;
+    top: -30px;
+    cursor: pointer;
+    left: 0;
+    display: none;
+}
+/*****************************************************************/
+/*****  CONTENT  *************************************************/
+
+.main-content__blog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    min-height: 1340px;
+    margin-left: 30px;
+}
+
+.article{
+    background: url("../images/knights.jpg") center 0 no-repeat;
+    background-color: white;
+    width: 270px;
+    height: 425px;
+    padding: 245px 15px 15px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+.article:hover{
+    box-shadow:
+            1px 1px #a8353a,
+            2px 2px #a8353a,
+            3px 3px #a8353a,
+            4px 4px #a8353a,
+            5px 5px #a8353a,
+            6px 6px #a8353a,
+            7px 7px #a8353a;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+}
+
+.article h3{
+    text-transform: uppercase;
+    font-size: 1.125em;
+    padding-bottom: 30px;
+}
+
+.article span{
+    color: rgb(110,110,110);
+    font-size: 1em;
+}
+
+.article p{
+    padding: 3px;
+}
+
+/*****************************************************************/
+/*****  FOOTER  **************************************************/
+
+.page-footer{
+    background-color: rgb(168,53,58);
+    min-height: 370px;
+}
+
+.footer-header, .footer-content{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.footer-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.contact{
+    width: 170px;
+    font-size: 1.125em;
+}
+
+.social-networks{
+    width: 115px;
+    height: 37px;
+}
+
+.social-networks__icon{
+    height: 35px;
+    width: 35px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.facebook{ background: url("../images/spritesheet.png") -10px -17px no-repeat; }
+.g{ background: url("../images/spritesheet.png") -13px -83px no-repeat; }
+.youtube{ background: url("../images/spritesheet.png") -15px -269px no-repeat; }
+
+.footer-content p{
+    padding-top: 20px;
+    font-size: 1em;
+}
